@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop | Dave's Cookies</title>
+  <link rel="stylesheet" href="style(shopnow).css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Dave's Cookies" class="logo-img" />
+      <span class="company-name">Dave's Cookies</span>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index(about).html">About</a></li>
+      <li><a href="index(product).htm">Products</a></li>
+      <li><a href="index(contact).html">Contact</a></li>
+    </nav>
+
+    <!-- Burger Icon for Mobile -->
+    <div class="burger" id="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Side Menu for Mobile -->
+  <nav id="side-menu" class="side-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index(about).html">About</a></li>
+      <li><a href="index(product).htm">Products</a></li>
+      <li><a href="index(contact).html">Contact</a></li>
+  </nav>
+
+  <!-- Shop Now Section -->
+  <section id="shop" class="shop-section">
+    <div class="shop-container">
+      <h2>Shop Our Cookies</h2>
+      <p>Explore our delicious handcrafted cookies made with premium ingredients. Baked fresh. Delivered fast.</p>
+
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/choco-chip.jpg" alt="Chocolate Chip" />
+          <h3>Chocolate Chip</h3>
+          <p>Classic and gooey with rich Belgian chocolate chunks.</p>
+          <button class="shop-btn">Shop Now</button>
+        </div>
+        <div class="product-card">
+          <img src="images/oatmeal.jpg" alt="Oatmeal Raisin" />
+          <h3>Oatmeal Raisin</h3>
+          <p>Old-fashioned, soft, and spiced just right.</p>
+          <button class="shop-btn">Shop Now</button>
+        </div>
+        <div class="product-card">
+          <img src="images/peanut-butter.jpg" alt="Peanut Butter" />
+          <h3>Peanut Butter</h3>
+          <p>Sweet and salty perfection in every bite.</p>
+          <button class="shop-btn">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Dave's Cookies. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript: Toggle Burger Menu -->
+  <script>
+    const burger = document.getElementById('burger-icon');
+    const sideMenu = document.getElementById('side-menu');
+    burger.addEventListener('click', () => {
+      sideMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

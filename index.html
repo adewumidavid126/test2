@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to Dave's Cookies</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="images/logo.png" alt="Dave's Cookies Logo" class="logo-img" />
+      <span class="company-name">Dave's Cookies</span>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index(about).html">About</a></li>
+        <li><a href="index(product).htm">Products</a></li>
+        <li><a href="index(contact).html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Burger Icon -->
+    <div class="burger" id="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- Side Menu -->
+  <nav id="side-menu" class="side-menu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index(about).html">About</a></li>
+      <li><a href="index(product).htm">Products</a></li>
+      <li><a href="index(contact).html">Contact</a></li>
+    </ul>
+  </nav>
+
+<!-- Home Section -->
+<section class="home-section">
+  <div class="hero-container">
+    <h1>Welcome to Dave's Cookies!</h1>
+    <p>Freshly baked cookies delivered right to your door. Taste the love in every bite!</p>
+  </div>
+
+  <!-- Additional Content (New Section) -->
+  <div class="extra-content">
+    <h2>Why Choose Us?</h2>
+    <p>At Dave's Cookies, we pride ourselves on using the finest ingredients and crafting the most delicious cookies you’ve ever tasted. Each batch is made with love and care to ensure you get the perfect sweet treat every time.</p>
+    
+    <div class="image-grid">
+      <div class="image-item">
+        <img src="images/ingredients.jpg" alt="Fresh Ingredients" />
+        <p>Only the best ingredients</p>
+      </div>
+      <div class="image-item">
+        <img src="images/cookie-batch.jpg" alt="Baking a Fresh Batch" />
+        <p>Freshly baked to perfection</p>
+      </div>
+      <div class="image-item">
+        <img src="images/packaging.jpg" alt="Packaging for Delivery" />
+        <p>Delivered fresh to your door</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="index(shopnow).html" class="shop-now-button">Shop Now</a>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Dave's Cookies. All rights reserved.</p>
+  </footer>
+
+  <!-- Script for burger toggle -->
+  <script>
+    const burger = document.getElementById('burger-icon');
+    const sideMenu = document.getElementById('side-menu');
+    burger.addEventListener('click', () => {
+      sideMenu.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
